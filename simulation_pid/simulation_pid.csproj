@@ -45,16 +45,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Physics.Designer.cs">
+      <DependentUpon>Physics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pid.Designer.cs">
+      <DependentUpon>pid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomControl1.resx">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physics.resx">
+      <DependentUpon>Physics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pid.resx">
+      <DependentUpon>pid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
